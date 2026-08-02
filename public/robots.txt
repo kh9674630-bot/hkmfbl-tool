@@ -1,0 +1,5 @@
+﻿# robots.txt for hkmfbl.top
+User-agent: *
+Allow: /
+
+Sitemap: https://hkmfbl.top/sitemap.xml

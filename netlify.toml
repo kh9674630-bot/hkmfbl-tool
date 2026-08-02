@@ -1,0 +1,11 @@
+﻿[build]
+command = "npm run build"
+publish = ".next"
+
+[build.environment]
+NEXT_PUBLIC_URL = "https://hkmfbl.top"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
