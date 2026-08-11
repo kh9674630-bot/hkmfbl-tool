@@ -1,11 +1,46 @@
 ﻿[build]
 command = "npm run build"
-publish = ".next"
+publish = "out"
 
 [build.environment]
 NEXT_PUBLIC_URL = "https://hkmfbl.top"
 
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+  from = "/_next/static/*"
+  to = "/_next/static/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/cookie-consent.js"
+  to = "/cookie-consent.js"
+  status = 200
+
+[[redirects]]
+  from = "/ads.txt"
+  to = "/ads.txt"
+  status = 200
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/favicon.ico"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

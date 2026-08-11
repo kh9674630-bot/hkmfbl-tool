@@ -11,7 +11,7 @@ export default function TermsPage() {
       <h1 className="text-3xl font-bold text-slate-900 mb-8">服务条款</h1>
       <p className="text-sm text-slate-500 mb-8">最后更新日期：2026年8月2日</p>
 
-      <div className="prose prose-slate max-w-none space-y-6 text-slate-600">
+      <div className="prose-custom max-w-none space-y-6 text-slate-600">
         <p>
           欢迎使用 HKMFBL（以下简称"网站"）。访问和使用本网站即表示您同意遵守以下服务条款。
           如果您不同意这些条款，请勿使用本网站。
@@ -63,3 +63,4 @@ export default function TermsPage() {
     </div>
   );
 }
+

@@ -1,6 +1,41 @@
-﻿[build]
+[build]
 command = "npm run build"
-publish = ".next"
+publish = "out"
+
+[[redirects]]
+  from = "/_next/static/*"
+  to = "/_next/static/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/cookie-consent.js"
+  to = "/cookie-consent.js"
+  status = 200
+
+[[redirects]]
+  from = "/ads.txt"
+  to = "/ads.txt"
+  status = 200
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/favicon.ico"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
 
 [[redirects]]
   from = "/*"
@@ -8,8 +43,18 @@ publish = ".next"
   status = 200
 
 [[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
   for = "/*"
   [headers.values]
-  X-Content-Type-Options = "nosniff"
-  X-Frame-Options = "DENY"
-  X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"

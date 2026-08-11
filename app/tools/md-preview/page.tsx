@@ -52,7 +52,7 @@ export default function MarkdownPreviewPage() {
             <label className="block text-sm font-medium text-slate-700 mb-2">预览 / HTML</label>
             {activeTab === "preview" ? (
               <div
-                className="tool-output !h-full !min-h-0 !overflow-y-auto prose prose-sm max-w-none p-4"
+                className="tool-output !h-full !min-h-0 !overflow-y-auto prose-custom p-4"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
             ) : (
