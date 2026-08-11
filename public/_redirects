@@ -1,0 +1,10 @@
+﻿# _redirects file for Cloudflare Pages
+# Don't redirect static assets to index.html
+/_next/static/*  /:splat  200
+/assets/*  /:splat  200
+ads.txt  /ads.txt  200
+robots.txt  /robots.txt  200
+*.js  /:splat  200
+*.css  /:splat  200
+*.png  /:splat  200
+*.svg  /:splat  200

@@ -57,6 +57,7 @@ export default function Footer() {
           <div className="flex items-center gap-6 text-sm">
             <Link href="/privacy" className="text-slate-500 hover:text-blue-600">隐私政策</Link>
             <Link href="/terms" className="text-slate-500 hover:text-blue-600">服务条款</Link>
+            <Link href="/disclaimer" className="text-slate-500 hover:text-blue-600">免责声明</Link>
             <Link href="/contact" className="text-slate-500 hover:text-blue-600">联系我们</Link>
           </div>
         </div>
