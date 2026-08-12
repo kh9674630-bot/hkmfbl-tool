@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: /
+Sitemap: https://hkmfbl.top/sitemap.xml
+Allow: / 
+Sitemap: https://hkmfbl.top/sitemap.xml 

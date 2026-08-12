@@ -1,0 +1,16 @@
+﻿{
+  "name": "HKMFBL 在线工具",
+  "short_name": "HKMFBL",
+  "description": "免费在线开发工具集",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
